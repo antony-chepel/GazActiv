@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "103832439341",
+    "project_id": "gazactivcopy",
+    "storage_bucket": "gazactivcopy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:103832439341:android:25850faeb1e5e5b6e186a4",
+        "android_client_info": {
+          "package_name": "com.tony_fire.gazactivcopy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "103832439341-srjpk86atu65r0jmu4fpvmimc1jfsug4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxPtjlZvu6yGb3gATyIcbNzvphtvfNGqA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "103832439341-srjpk86atu65r0jmu4fpvmimc1jfsug4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

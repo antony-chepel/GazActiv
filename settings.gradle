@@ -1,0 +1,2 @@
+rootProject.name = "Gaz ActivCopy"
+include ':app'
