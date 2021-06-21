@@ -1,6 +1,7 @@
 package com.tony_fire.gazactivcopy
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -101,10 +102,11 @@ class RegistrationActivity : AppCompatActivity() {
                                 binding.regButton.isEnabled = true
                             }
                             response.body()?.data?.pr.equals("redirect") -> {
-                                val i = Intent(this@RegistrationActivity,WebViewActivity::class.java).apply {
-                                    putExtra("Url",response.body()?.data?.redirect.toString())
-                                }
-                                startActivity(i)
+                                val url = response.body()?.data?.redirect.toString()
+                                val bi = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+                                val text = "Выберите лучший браузер для открытия ссылки"
+                                val chooser = Intent.createChooser(bi,text)
+                                startActivity(chooser)
                                 binding.regButton.setBackgroundResource(R.drawable.button_selector)
                                 binding.regButton.isEnabled = true
                             }
